@@ -1,0 +1,19 @@
+n1==n2 && n2==n3 -> equilatero -- fim
+senao 
+n1==n2 || n2 ==n3 || n3 ==n1 -> Isoceles -- fim
+senao
+"Escaleno"
+fim
+
+##TERMINAL
+Quando você deseja executar um codigo via terminal pela barra de comando você deve digitar:
+node nomedoArquivo e clicar enter
+
+${} - Abre uma região de código dentro de uma string que está entre ``, e é a maneira correta de fazer interpolação
+
+##Exercicio 1
+A população de Sanka em 2022 era de **254857** e em 2024 foi para 265294.
+A diferença de 2024 (265294) com 2022(254857) é de X
+
+##Exercicio 2
+Calcular a densidade populacional e insiram no mesmo vetor(demografia) "Densidade",vDensidadePopulacional
