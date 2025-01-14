@@ -51,11 +51,10 @@ demografia[1] = 265294
 //console.log(demografia)
 
 //#Exercicio 2 - Calcular a densidade populacional e insiram no mesmo vetor(demografia) "Densidade",vDensidadePopulacional ----> DenPop = NumHabit/area
-vDensidadePopulacional = demografia[1] / demografia[3] //não preciso usar a váriavel auxiliar para isso
+//vDensidadePopulacional = demografia[1] / demografia[3] //não preciso usar a váriavel auxiliar para isso
 //console.log(vDensidadePopulacional)
-
 demografia[4] = "Densidade"
-demografia[5] = vDensidadePopulacional
+demografia[5] = demografia[1] / demografia[3] //posso fazer o cálculo e salvar direto dentro do indice que eu quero
 console.log(demografia)
 
 
