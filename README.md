@@ -1,4 +1,4 @@
-# ![TRANSFORME-SE -- Serasa + Gerando Falcões]
+# TRANSFORME-SE -- Serasa + Gerando Falcões
 
 ### Aula 1 - Lógica de programação 
 
