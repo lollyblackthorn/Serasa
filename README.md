@@ -5,7 +5,7 @@
 
 ### Aula 1 - Lógica de programação 
 
-A aula 1 abordou o "console.log()" e o conceito de interpolação `${}`que deve ser feito como: 
+A aula 1 abordou o "console.log()" e o conceito de interpolação `${}`que deve ser feito como o exemplo abaixo: 
 console.log(`\nVocê leu ${qtdBooks} livros em 2024, parabéns!\n`)
 
 Esta é a maneira correta de fazer interpolação. Lembrando que *console.log(\n"Você leu " +qtdBooks+ " livros em 2024, parabéns!\n`)*
@@ -15,10 +15,20 @@ Esta é a maneira correta de fazer interpolação. Lembrando que *console.log(\n
 
 ### Aula 2 - Lógica de programação 
 
-Abordou como pesquisar um arquivo *('../input')* --> você usa uma determinada quantidade de pastas, de acordo com o nível que vc quer acessar.
+Abordou como pesquisar um arquivo ***('../input')*** --> você usa uma determinada quantidade de pastas, de acordo com o nível que vc quer acessar.
 
-Como mudar a pasta no terminal: cd nome da pasta 
+Como mudar a pasta no terminal: ***cd (nome da pasta)***
+
 Explicou que se eu criar uma várivel dentro de chaves {}, você deve criar como **let** e não como **var** .
 **let** é para variáveis locais e **var** para variáveis globais.
+Outra maneira é criar como **const**, essa seria apenas para leitura, tem uma valor fixo e não pode/deve ser alterado.
+Ex:
+**var** identificacao 
+**let** nome = "Frederica"
+**const** PI = 3,14159
 
-O **require** funciona como se fosse o import em JAVA. Ele importa uma biblioteca.
+O **require** em Javascript funciona como se fosse o import de JAVA, sua função é importar uma biblioteca.
+
+Vamos aprender a formatar uma saída de texto a partir do input do usuário. Para isso, faça pesquisas em fóruns e na documentação do javascript.
+
+    -split vai transformar meu input em um vetor a partir dos espaços que o usuário inserir enquanto digita. A partir disso, eu consigo trabalhar com os indices que permitirá que eu manipule a formatação de saída.
