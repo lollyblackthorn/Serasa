@@ -14,7 +14,7 @@ const input = require('../input');
 
         //${arrayAuthor[1].toUpperCase()} vai pegar o sobrenome do autor e transformar em maiúsculo
         //${author.charAt(0).toUpperCase()} vai pegar a primeira letra do nome do autor e transformar em maiúsculo
-        //
+    
 
 
     }
