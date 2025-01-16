@@ -1,5 +1,5 @@
 
-# TRANSFORME-SE -- Serasa + Gerando Falcões ![transforme-se](https://github.com/user-attachments/assets/3dc8e11a-3ce5-4a47-84d4-ef1c1944bdb1)
+# ![transforme-se](https://github.com/user-attachments/assets/3dc8e11a-3ce5-4a47-84d4-ef1c1944bdb1)
 
 
 
