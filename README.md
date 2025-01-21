@@ -21,6 +21,7 @@ node "nomedoArquivo" e pressionar enter
 Abordou como pesquisar um arquivo ***('../input')*** --> você usa uma determinada quantidade de pastas, de acordo com o nível que vc quer acessar.
 
 Como mudar a pasta no terminal: ***cd (nome da pasta)***
+Para SAIR da pasta usamos cd ..
 
 Explicou que se eu criar uma várivel dentro de chaves {}, você deve criar como **let** e não como **var** .
 **let** é para variáveis locais e **var** para variáveis globais.
