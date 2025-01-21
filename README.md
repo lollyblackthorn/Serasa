@@ -55,3 +55,12 @@ O **require** em Javascript funciona como se fosse o import de JAVA, sua funçã
     - charAt(0) - vai pegar a primeira letra de uma String. (Você consegue escolher o número do índice).
     - length  - vai retornar o tamanho/quantidade de algo. 
     - slice() - retorna um novo array contendo um subconjunto dos elementos do array original. Ex.: ${arrayAuthor[0].slice(1).toLowerCase()}
+
+### Aula 4 - Lógica de programação - Loop
+
+Nesta aulta conhecemos o conceito de loop. O loop tem a seguinte estrutura:
+
+    loop (condicao){
+        console.log("Imprime algo..")
+    }
+
