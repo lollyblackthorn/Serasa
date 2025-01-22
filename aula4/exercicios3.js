@@ -9,17 +9,17 @@ const input = require('../input');
 (
     async () => {
 
-        var lista = ["Hidrogênio","Hélio","Lítio","Berílio", "Boro"]
+        var lista = ["Hidrogênio","Hélio","Lítio","Berílio","Boro"]
 
-        console.log("\nQuantos gramas do elemento radioativo você possui?")
-        let qtdMassaGramas = (await input()).toLowerCase()
+        console.log("\nQuantos elementos químicos você quer visualizar?")
+        let qtdElementos = await input()
 
 
-        while (qtdMassaGramas > 0.000001) {
-            console.log(qtdMassaGramas)
+        /*while (qtdElementos > lista) {
+            console.log(lista[] = )
             qtdMassaGramas /= 2   //qtdMassaGramas = qtdMassaGramas/2
 
-        }
+        }*/
 
 
     }
