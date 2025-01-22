@@ -9,17 +9,27 @@ const input = require('../input');
 (
     async () => {
 
-        var lista = ["Hidrogênio","Hélio","Lítio","Berílio","Boro"]
+        const lista = ["Hidrogênio","Hélio","Lítio","Berílio","Boro"]
 
         console.log("\nQuantos elementos químicos você quer visualizar?")
         let qtdElementos = await input()
 
+        let index = 0
 
-        /*while (qtdElementos > lista) {
-            console.log(lista[] = )
-            qtdMassaGramas /= 2   //qtdMassaGramas = qtdMassaGramas/2
-
-        }*/
+        while (index < qtdElementos) {
+            
+            if (index < lista.length){
+                
+                console.log(lista[index] )    
+                                            
+            }else{
+                console.log("Número de elemento inválido!")
+            }
+            index += 1
+            
+            
+        }
+        
 
 
     }
