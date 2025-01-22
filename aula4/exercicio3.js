@@ -25,11 +25,9 @@ const input = require('../input');
             }else{
                 console.log("Número de elemento inválido!")
             }
-            index += 1
+            index += 1            
             
-            
-        }
-        
+        }       
 
 
     }
