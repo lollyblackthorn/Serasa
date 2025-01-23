@@ -6,7 +6,7 @@ const input = require('../input');
 (
     async () => {
 
-        console.log("Digite um número: ")   
+        console.log("\nDigite um número: ")   
         let numberIniti = await input()
         let num = numberIniti
 
@@ -20,7 +20,7 @@ const input = require('../input');
             for(i = num - 1; i >= 1; i--){
                 num = num*i
             }
-            console.log(`O fatorial de ${numberIniti} é igual a ${num}`)
+            console.log(`\nO fatorial de ${numberIniti} é igual a ${num}\n`)
 
         }        
 
