@@ -9,10 +9,7 @@ const input = require('../input');
         console.log("\nDigite um número: ")   
         let numberIniti = await input()
         let num = numberIniti
-
-
-        //let resultFatorial = num
-        
+       
         if( num == 0 || num == 1){
             console.log("\nFatorial = 1")
         }else{
