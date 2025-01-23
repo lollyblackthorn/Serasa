@@ -57,11 +57,14 @@ O **require** em Javascript funciona como se fosse o import de JAVA, sua funçã
     - length  - vai retornar o tamanho/quantidade de algo. 
     - slice() - retorna um novo array contendo um subconjunto dos elementos do array original. Ex.: ${arrayAuthor[0].slice(1).toLowerCase()}
 
-### Aula 4 - Lógica de programação - Loop
+### Aula 4 - Lógica de programação - Loop (if..else - while - do..while - for)
 
 Nesta aulta conhecemos o conceito de loop. O loop tem a seguinte estrutura:
 
     loop (condicao){
         console.log("Imprime algo..")
     }
+
+### Aula 5 - Lógica de programação - Função
+Vamos a prender a criar funções e executá-las.
 
