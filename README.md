@@ -68,3 +68,8 @@ Nesta aulta conhecemos o conceito de loop. O loop tem a seguinte estrutura:
 ### Aula 5 - Lógica de programação - Função
 Vamos a prender a criar funções e executá-las.
 
+    function nomeFunction(parametro){ //Dentro das chaves ocorre a declaração de escopo
+    console.log("Olá!") //O que a função faz
+    }
+    nomeFunction() //fará que a função sejá impressa
+

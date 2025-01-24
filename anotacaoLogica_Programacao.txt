@@ -17,3 +17,15 @@ A diferença de 2024 (265294) com 2022(254857) é de X
 
 ##Exercicio 2
 Calcular a densidade populacional e insiram no mesmo vetor(demografia) "Densidade",vDensidadePopulacional
+
+
+const input = require('../input');
+(
+    async () => {
+
+        console.log("Insira o primeiro número: ")
+        var num1 = await input()
+
+
+    }
+)()
