@@ -10,26 +10,21 @@ async function registerUser(){
 
     console.log("Insira o telefone do usuário: ")
     var telephone = await input()       
-   
+
     var user = {
         "Nome": name, //chave: valor
         "Telefone": telephone        
-    } 
-    return user
+    }        
+      
 }
 
 var register = []
-//var obj = []
 
 do{
-    //console.log(await registerUser()) //falta aqui
-    //register = await registerUser()
-    register.push(await registerUser())
-
-
+    //falta aqui
+    register[0] = await registerUser()
     console.log("Deseja registrar mais um usuário?: ")
     var respostaUser = (await input()).toLowerCase()  
-
 
 } while(respostaUser == "sim") //enquanto isso for verdade
 
