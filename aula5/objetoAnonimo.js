@@ -19,11 +19,11 @@ async function registerUser(){
 }
 
 var register = []
-//var obj = []
 
 do{
     //console.log(await registerUser()) //falta aqui
     //register = await registerUser()
+    //for(i = 0; i .lenght )
     register.push(await registerUser())
 
 
