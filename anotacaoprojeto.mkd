@@ -20,3 +20,26 @@ A administração escolar é responsável pelo planejamento e funcionamento da e
 - Produção e manutenção da documentação dos alunos e funcionários
 - Escrituração e arquivamento
 - O secretário escolar é um elo entre a administração escolar, professores, alunos e pais. Ele atua na gestão de registros e documentos escolares, auxiliando toda a gestão
+
+OBJETOS
+funcionarios
+documentos - prontuário/dadosalunos, funcionarios, informações de ocorrencias, histórico, declaração de matricula, boletim, diploma, atestado, RELATÓRIO
+calendario, reuniões
+cadastro de entrada e saída de alunos
+enviar dados pro governo, INEP, OBMEP, ENADE
+correspondência/organizaçõa de documentos e arquivos
+controle de frequencia
+controle de notas
+
+##relatórios
+    lista de admissão e saída de alunos;
+    livros de registros de matrículas;
+    listagem de alunos;
+    atas de reuniões;
+    livro de transferências;
+    livro de protocolos;
+    livro ponto dos funcionários;
+    livro de requerimentos;
+    livro de ofícios;
+    livro de circulares e comunicados internos;
+    expedição de documentos.
