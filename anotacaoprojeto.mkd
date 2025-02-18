@@ -1,0 +1,22 @@
+Sistemas Educacionais - Desenvolvimento em Módulos
+TEMA: SECRETÁRIA
+
+A administração escolar é responsável pelo planejamento e funcionamento da escola, enquanto a secretaria escolar é o setor que cuida da documentação e dos serviços administrativos. 
+
+#Administração escolar
+- Planejamento do uso dos recursos da escola
+- Supervisão do funcionamento financeiro, pedagógico e de marketing
+- Garantia do cumprimento do planejamento estratégico
+- Mediação entre a escola e a comunidade
+
+#Secretaria escolar 
+- Gerenciamento da documentação acadêmica e administrativa
+- Atualização e conformidade da documentação com as normas educacionais
+- Participação no planejamento escolar
+- Organização do calendário acadêmico
+- Programação de eventos
+- Coordenação de reuniões
+- Atendimento a toda a comunidade escolar
+- Produção e manutenção da documentação dos alunos e funcionários
+- Escrituração e arquivamento
+- O secretário escolar é um elo entre a administração escolar, professores, alunos e pais. Ele atua na gestão de registros e documentos escolares, auxiliando toda a gestão
