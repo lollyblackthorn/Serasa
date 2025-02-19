@@ -23,7 +23,7 @@ A administração escolar é responsável pelo planejamento e funcionamento da e
 
 OBJETOS - https://sae.digital/secretaria-escolar/
 
-documentos - prontuário/dadosalunos, funcionarios, informações de ocorrencias, histórico, declaração de matricula, boletim, diploma, atestado, RELATÓRIO - Lorrany
+documentos - prontuário/dadosalunos, informações de ocorrencias, histórico, declaração de matricula, boletim, diploma, atestado, RELATÓRIO - Lorrany
 calendario: reuniões - Sthefane
 CURSOS, componente curricular - Alef
 disciplinas - miszael
