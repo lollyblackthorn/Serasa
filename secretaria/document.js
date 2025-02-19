@@ -19,22 +19,40 @@ function setDocuments(req){
     documents.push(d)                       //empurra o obj d na lista documents
 }
 
+function getDocuments(req){
+    return documents.find( p => p.descripition == req.search)
+}
+
 setDocuments({
     id: 0,
-    descripition: "Esse é meu primeiro post",
+    descripition: "primeiro",
     url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
     createAt: "2000-01-31",                  //data que foi criado
-    userId: 0,
+    //userId: 0,
     //type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
 setDocuments({
     id: 1,
-    descripition: "Esse é meu primeiro post",
+    descripition: "primeiro",
     url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
-    createAt: "2000-01-31",                  //data que foi criado
-    userId: 0,
+    createAt: "2001-01-31",                  //data que foi criado
+    //userId: 0,
     //type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
+setDocuments({
+    id: 2,
+    descripition: "terceiro",
+    url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
+    createAt: "2002-01-31",                  //data que foi criado
+    //userId: 0,
+    //type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
+})
+
+let result = getDocuments({
+    search: "primeiro"
+})
+
 console.log(documents)
+console.log(result)
