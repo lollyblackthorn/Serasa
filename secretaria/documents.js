@@ -12,4 +12,11 @@ var ocorrencias = new Object();
 ocorrencias.id = 
 ocorrencias 
 
+function setDocuments(req,res){
+    let d = {//lista, registro, objAnonimo
+        id: req.id
+
+    }
+
+}
 
