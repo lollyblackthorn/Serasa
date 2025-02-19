@@ -18,3 +18,22 @@ DROP
 pensar nos objetos
 objeto aluno
 objeto professor possui cadastro
+
+//Atributos = campos de um formulário
+/*documentos - prontuário/dadosalunos, informações de ocorrencias, histórico, 
+declaração de matricula, boletim, diploma, atestado, RELATÓRIO - */
+
+var studentRecord = new Object();
+studentRecord.id = 
+studentRecord.nameStudent = 
+studentRecord.class = " ";
+
+var occurrences = new Object();
+occurrences.id = 
+occurrences.nameStudent = " "
+
+var schoolHistory = new Object();
+schoolHistory. idStudent = 
+schoolHistory.grade =       //nota
+schoolHistory.grade =       //serie
+schoolHistory.class =       //materia
