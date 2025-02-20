@@ -12,8 +12,6 @@ function setDocuments(req){
         createAt: req.createAt,             //data que foi criado
         //userId: req.userId,
         //type: req.type,                     //tipo de documento boletim, diploma, atestado, etc.
-
-
     }
 
     documents.push(d)                       //empurra o obj d na lista documents
