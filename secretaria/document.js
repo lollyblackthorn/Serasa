@@ -29,6 +29,12 @@ function getDocuments(req){
     //return documents.filter( d => (d.descripition.includes(req.search)||d.createAt > req.createAt ))
 }
 
+function showDocuments(req){
+    return documents.find( d => (d.id == req.id))
+    //return documents.filter( d => (d.descripition.includes(req.search)||d.createAt > req.createAt ))
+
+}
+
 setDocuments({
     id: 0,
     descripition: "primeiro ano de maracá",
@@ -59,8 +65,10 @@ setDocuments({
 let result = getDocuments({
     search: "primeiro",
     createAt: "2000-01-31",
-    clausule: "or"
+    clausule: "or",
+    //id: 3
 })
 
-//onsole.log(documents)
-console.log(result)
+console.log(showDocuments({id:2}))
+//console.log(result)
+//return documents.show({id:1})
