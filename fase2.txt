@@ -1,4 +1,4 @@
----------------------------------------------------------------------------- FASE 2 -------------------------------------------------------------------------------------
+##--------------------------------------- FASE 2 -------------------------------------------------------------------------------------
 18/02
 Create - LET, POST
 Read - 
@@ -37,3 +37,9 @@ schoolHistory. idStudent =
 schoolHistory.grade =       //nota
 schoolHistory.grade =       //serie
 schoolHistory.class =       //materia
+-------------------------------------------------------------
+19/02/25
+1 - fazer uma função que se chama showDocuments ela vai pesquisar dentro do vetor o ID (ou uma coisa só .find)
+2 - pegar essa função de get e fazer tratamentos
+Se vc pedir 1 campo ela pesquisa 1
+Se vc passar 2 ela pesquisa 2 campos
