@@ -27,10 +27,24 @@ function getDocuments(req){
     //return documents.filter( d => (d.descripition.includes(req.search)||d.createAt > req.createAt ))
 }
 
-function showDocuments(req){
-    return documents.find( d => (d.id == req.id))
-    //return documents.filter( d => (d.descripition.includes(req.search)||d.createAt > req.createAt ))
+/*function showDocuments(req){ //função que se chama showDocuments ela vai pesquisar dentro do vetor o ID (ou uma coisa só usando o .find)
+    return documents.find( d => (d.id == req.id))//vai retornar o id solicitado no console log caso ele exista
+}*/
 
+function showDocuments(id){ //função que se chama showDocuments ela vai pesquisar dentro do vetor o ID (ou uma coisa só usando o .find)
+    return documents.find( d => (d.id == id))//vai retornar o id solicitado no console log caso ele exista
+}
+
+function putDocuments(req,id){
+    let index = documents.findIndex(d => d.id == id)
+
+    if(index == -1) return "Não encontrado"
+    if(req.descripition != undefined) documents[index].descripition = req.descripition
+    if(req.url != undefined) documents[index].url = req.url
+    if(req.createAt != undefined) documents[index].createAt = req.createAt
+
+    return documents[index]
+    
 }
 
 setDocuments({
@@ -62,11 +76,20 @@ setDocuments({
 
 let result = getDocuments({
     search: "primeiro",
+    descripition: "terceiro",
     createAt: "2000-01-31",
     clausule: "or",
     //id: 3
 })
 
-console.log(showDocuments({id:2}))
+let documentAtual = putDocuments({
+    descripition: "terceiro lua",
+    
+},1)
+
+//let show = showPost(1)
+//console.log(showDocuments({id:1}))
 //console.log(result)
-//return documents.show({id:1})
+//console.log(show)
+console.log(documentAtual)
+

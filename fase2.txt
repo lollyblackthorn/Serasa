@@ -51,3 +51,8 @@ let result = getDocuments({
     //id: 3
 })
 caso eu passe apenas um parametro o código quebra, isso n pode acontecer, resolva isso!
+
+pesquisar o conceito de pivot table
+
+//função que se chama showDocuments ela vai pesquisar dentro do vetor o ID (ou uma coisa só usando o .find)
+    return documents.find( d => (d.id == req.id))//vai retornar o id solicitado no console log caso ele exista
