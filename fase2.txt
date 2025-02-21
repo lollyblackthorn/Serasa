@@ -56,3 +56,9 @@ pesquisar o conceito de pivot table
 
 //função que se chama showDocuments ela vai pesquisar dentro do vetor o ID (ou uma coisa só usando o .find)
     return documents.find( d => (d.id == req.id))//vai retornar o id solicitado no console log caso ele exista
+
+
+altera essa funcao para fazer um tratamento de rejex (mascara) para que o usuário não possa inserir
+as informações caso elas não sigam o padrão.
+
+fazer isso na função de post e de put

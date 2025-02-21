@@ -18,9 +18,12 @@ function setDocuments(req){
 }
 
 function getDocuments(req){
+    if(req == null || req == {}) return documents
     if(req.clausule == "and"){
-        return documents.filter( d => (d.descripition.includes(req.search) && d.createAt > req.createAt ))
-    }else if(req.clausule == "or"){
+        return documents.filter(d =>
+            req.search != undefined && d.descripition.includes(req.search) &&  req.createAt != undefined && d.createAt > req.createAt
+        )
+    }else(req.clausule == "or"){
         return documents.filter( d => (d.descripition.includes(req.search) || d.createAt > req.createAt ))
     }
     //return documents.filter( d => (d.descripition == req.search && d.createAt > req.createAt))
