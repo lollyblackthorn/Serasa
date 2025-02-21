@@ -4,6 +4,12 @@ declaração de matricula, boletim, diploma, atestado, RELATÓRIO - */
 
 var documents = []
 
+const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+    if (!datePattern.test(req.createAt)) {
+        console.error('Data inválida. O formato correto é YYYY-MM-DD');
+        return;
+    }
+
 function setDocuments(req){
     let d = {//lista, registro, objAnonimo
         id: req.id,
@@ -92,7 +98,7 @@ let documentAtual = putDocuments({
 
 //let show = showPost(1)
 //console.log(showDocuments({id:1}))
-//console.log(result)
+console.log(result)
 //console.log(show)
-console.log(documentAtual)
+//console.log(documentAtual)
 
