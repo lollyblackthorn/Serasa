@@ -4,23 +4,50 @@ declaração de matricula, boletim, diploma, atestado, RELATÓRIO - */
 
 var documents = []
 
-const datePattern = /^\d{4}-\d{2}-\d{2}$/;
-    if (!datePattern.test(req.createAt)) {
-        console.error('Data inválida. O formato correto é YYYY-MM-DD');
-        return;
+function setDocuments(req){
+
+    // Expressões Regulares que formatam a entrada do usuário
+    const idRegex = /^[0-9]+$/ // Esse input aceita apenas números positivos
+    const descriptionRegex = /^.{3,}$/ // Esse input pede pelo menos 3 caracteres
+    const urlRegex = /^(https?:\/\/[^\s]+)$/ // Começa com http:// ou https:// e não contém espaços
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/ // Formato YYYY-MM-DD
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
+
+    // Validações das expressões regulares
+    if (!idRegex.test(req.id)) {
+        console.error("Erro: ID inválido. Deve conter apenas números positivos.");
+        return
+    }
+    if (!descriptionRegex.test(req.description)) {
+        console.error("Erro: Descrição inválida. Insira pelo menos 3 caracteres.");
+        return
+    }
+    if (!urlRegex.test(req.url)) {
+        console.error("Erro: URL inválida. Deve começar com http:// ou https://");
+        return
+    }
+    if (!dateRegex.test(req.createAt)) {
+        console.error("Erro: Data inválida. Deve estar no formato YYYY-MM-DD e ser uma data válida.");
+        return
+    }
+    if (!emailRegex.test(req.email)){
+        console.error("Erro: Email inválido. Deve estar no formato fulano@fulano.com \n Pode conter números.");
+        return
+
     }
 
-function setDocuments(req){
     let d = {//lista, registro, objAnonimo
         id: req.id,
         description: req.description,
         url: req.url,                       //http:qualquercoisa. ou https-- caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
-        createAt: req.createAt             //data que foi criado - YYYY-MM-DD
-        //userId: req.userId,
-        //type: req.type,                     //tipo de documento boletim, diploma, atestado, etc.
+        createAt: req.createAt,            //data que foi criado - YYYY-MM-DD
+        email: req.email,                  //
+        type: req.type,                     //tipo de documento boletim, diploma, atestado, etc.
     }
 
     documents.push(d)                       //empurra o obj d na lista documents
+    console.log("Documento adicionado!", d) //Verifica o push
 }
 
 function getDocuments(req){
@@ -59,10 +86,10 @@ function putDocuments(req,id){
 setDocuments({
     id: 0,
     description: "primeiro ano de maracá",
-    url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
+    url: "https://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
     createAt: "2000-01-31",                  //data que foi criado
-    //userId: 0,
-    //type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
+    email: "luiza@gmail.com",
+    type: req.type                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
 setDocuments({
@@ -70,8 +97,8 @@ setDocuments({
     description: "primeiro caristia",
     url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
     createAt: "2001-02-31",                  //data que foi criado
-    //userId: 0,
-    //type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
+    email: "luizinha08@gmail.com",
+    type: req.type                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
 setDocuments({
@@ -79,8 +106,8 @@ setDocuments({
     description: "terceiro",
     url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
     createAt: "2002-03-30",                  //data que foi criado
-    //userId: 0,
-    //type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
+    email: "01481518 @gmail12",
+    type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
 let result = getDocuments({
@@ -88,7 +115,7 @@ let result = getDocuments({
     description: "terceiro",
     createAt: "2000-01-31",
     clausule: "or",
-    //id: 3
+    
 })
 
 let documentAtual = putDocuments({
@@ -98,7 +125,8 @@ let documentAtual = putDocuments({
 
 //let show = showPost(1)
 //console.log(showDocuments({id:1}))
-console.log(result)
+//console.log(result)
 //console.log(show)
 //console.log(documentAtual)
+console.log("\n\nDocumentos salvos", documents)
 
