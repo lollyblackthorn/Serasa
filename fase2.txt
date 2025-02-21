@@ -61,4 +61,4 @@ pesquisar o conceito de pivot table
 altera essa funcao para fazer um tratamento de rejex (mascara) para que o usuário não possa inserir
 as informações caso elas não sigam o padrão.
 
-fazer isso na função de post e de put
+fazer isso na função de set e de put
