@@ -8,8 +8,8 @@ function setDocuments(req){
     let d = {//lista, registro, objAnonimo
         id: req.id,
         descripition: req.descripition,
-        url: req.url,                       //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
-        createAt: req.createAt,             //data que foi criado
+        url: req.url,                       //http:qualquercoisa. ou https-- caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
+        createAt: req.createAt             //data que foi criado - YYYY-MM-DD
         //userId: req.userId,
         //type: req.type,                     //tipo de documento boletim, diploma, atestado, etc.
     }
@@ -23,7 +23,7 @@ function getDocuments(req){
         return documents.filter(d =>
             req.search != undefined && d.descripition.includes(req.search) &&  req.createAt != undefined && d.createAt > req.createAt
         )
-    }else(req.clausule == "or"){
+    }else {req.clausule == "or"
         return documents.filter( d => (d.descripition.includes(req.search) || d.createAt > req.createAt ))
     }
     //return documents.filter( d => (d.descripition == req.search && d.createAt > req.createAt))
