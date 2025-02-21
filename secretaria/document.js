@@ -16,23 +16,22 @@ function setDocuments(req){
 
     // Validações das expressões regulares
     if (!idRegex.test(req.id)) {
-        console.error("Erro: ID inválido. Deve conter apenas números positivos.");
+        console.error("Erro: ID inválido. Deve conter apenas números positivos.")
         return
     }
-    if (!descriptionRegex.test(req.description)) {
-        console.error("Erro: Descrição inválida. Insira pelo menos 3 caracteres.");
-        return
+    if (req.description.length > 10) {        
+        return "Descrição excedeu mais de 10 caracteres!"
     }
     if (!urlRegex.test(req.url)) {
-        console.error("Erro: URL inválida. Deve começar com http:// ou https://");
+        console.error("Erro: URL inválida. Deve começar com http:// ou https://")
         return
     }
     if (!dateRegex.test(req.createAt)) {
-        console.error("Erro: Data inválida. Deve estar no formato YYYY-MM-DD e ser uma data válida.");
+        console.error("Erro: Data inválida. Deve estar no formato YYYY-MM-DD e ser uma data válida.")
         return
     }
     if (!emailRegex.test(req.email)){
-        console.error("Erro: Email inválido. Deve estar no formato fulano@fulano.com \n Pode conter números.");
+        console.error("Erro: Email inválido. Deve estar no formato fulano@fulano.com \n Pode conter números.")
         return
 
     }
@@ -83,13 +82,14 @@ function putDocuments(req,id){
     
 }
 
+//Campos de simulação de input
 setDocuments({
     id: 0,
     description: "primeiro ano de maracá",
     url: "https://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
     createAt: "2000-01-31",                  //data que foi criado
     email: "luiza@gmail.com",
-    type: req.type                         //tipo de documento boletim, diploma, atestado, etc.
+    //type: req.type                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
 setDocuments({
@@ -98,7 +98,7 @@ setDocuments({
     url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
     createAt: "2001-02-31",                  //data que foi criado
     email: "luizinha08@gmail.com",
-    type: req.type                         //tipo de documento boletim, diploma, atestado, etc.
+    //type: req.type                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
 setDocuments({
@@ -107,9 +107,10 @@ setDocuments({
     url: "http://caminhodomeuarquivo.com",    //caso o usuário tenha q enviar algum arquivo/midia, pegar caminho de um arquivo
     createAt: "2002-03-30",                  //data que foi criado
     email: "01481518 @gmail12",
-    type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
+    //type: req.type,                         //tipo de documento boletim, diploma, atestado, etc.
 })
 
+// Outros 
 let result = getDocuments({
     search: "primeiro",
     description: "terceiro",
@@ -128,5 +129,5 @@ let documentAtual = putDocuments({
 //console.log(result)
 //console.log(show)
 //console.log(documentAtual)
-console.log("\n\nDocumentos salvos", documents)
+console.log("\n\nDocumentos salvos", documents) // console log dos tratamentos de regex
 
